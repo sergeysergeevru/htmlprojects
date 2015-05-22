@@ -15,8 +15,22 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <!-- Local css for template -->
 <link rel="stylesheet" href="css/template.css">
+<script src="js/jquery.js"></script>
+
+<script>
+$(document).ready(function() {
+	$('#header-itemsmenu').on('mousemove',function(e){
+			var X = e.pageX; // положения по оси Y
+		//	$('#input-search').val(Y);
+    		$('#item-line').css('background-position',X);
+    	});
+
+	
+});
+</script>
 </head>
 <body>
+
 <div id="template">
 <!-- header -->
 <!-- top -->
@@ -63,6 +77,7 @@
 </div>
 <!-- items menu-->
 <div id="header-itemsmenu">
+<div id="item-line">
 <div id="itemsmenu">
 <div class="menuitem" id="piro"><span>Пиротехника усиление</span></div>
 <div class="menuitem" id="airsoft"><span>Расхродники страйкбол</span></div>
@@ -70,6 +85,7 @@
 <div class="menuitem"id="camp"><span>Лагерное снаряжение</span></div>
 <div class="menuitem" id="food"><span>Еда<br>напитки</span></div>
 <div class="menuitem" id="clothes"><span>Одежда экипировка</span></div>
+</div>
 </div>
 </div>
 </div><div id="content-template">
