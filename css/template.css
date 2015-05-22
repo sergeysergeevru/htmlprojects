@@ -2,27 +2,34 @@ body{
 margin:0px;
 padding:0px;
 background-image:url('../img/backgroundmilitary.png');
+
 }
 #template{
-width:100%;
+min-width:100%;
 min-height:100px;
 padding:0px;
+margin:0px;
+
 }
 #back-header-top{
-position:fixed;
+position:relative;
 top:0px;
 z-index:99;
 width:100%;
 height:50px;
 background-color:#341806;
+
 }
 #header-top{
+position:relative;
 z-index:1;
-width:100vw;
+width:100%;
 height:50px;
 background-color:#341806;
+
 }
 #header-content{
+position:relative;
 width:972px;
 text-transform:uppercase;
 margin:auto;
@@ -85,15 +92,15 @@ width:972px;
 height:106px;
 padding-top:12px;
 }
-#header-menu #menu{
+#header-menu .menu{
+border-left:1px solid #341806;
+border-right:1px solid #341806;
+}
+.menu{
 position:absolute;
 display: inline-block;
 margin-top:29px;
 padding-top:3px;
-
-
-border-left:1px solid #341806;
-border-right:1px solid #341806;
 height:25px;
 }
 #logo{
@@ -103,26 +110,26 @@ width:178px;
 height:82px;
 margin-right:20px;
 }
-#header-menu ul{
+.menu ul{
 display: inline-block;
 color:#c69c6d;
 list-style-type: circle;
 margin-left:15px;
 margin-right:15px;
 }
-#header-menu ul li{
+.menu ul li{
 float: left;
 padding-left:3px;
 list-style: none;
 }
-#header-menu  a{
+#header-menu a,.menu  a{
 color:#c69c6d;
 font-size:15px;
 font-family: 'Cuprum', sans-serif;
 text-transform:uppercase;
 text-decoration:none;
 }
-#header-menu  a:hover{
+#header-menu a:hover, .menu  a:hover{
 color:#fff;
 }
 #header-bag{
@@ -160,7 +167,7 @@ margin-left:20px;
 }
 #header-itemsmenu{
 
-width:100%;
+width: 100%;
 height:160px;
 background-image:url('../img/itemsmenubackground.png');
 background-position:center;
@@ -176,7 +183,6 @@ text-align:center;
 background-image:url(../img/item.png);
 width:112px;
 height:112px;
-
 margin:0 10 0 10;
 font-family: 'Cuprum', sans-serif;
 color:#c69c6d;
@@ -186,31 +192,155 @@ color:#c69c6d;
   text-transform: uppercase;
   font-size: 17px;
 }
+.menuitem:hover span{
+display:none;
+}
+#piro:hover{
+background-image:url(../img/pyrotechnic.png)
+}
+#airsoft:hover{
+background-image:url(../img/airsoft.png)
+}
+#kit:hover{
+background-image:url(../img/kit.png)
+}
+#camp:hover{
+background-image:url(../img/camp.png)
+}
+#food:hover{
+background-image:url(../img/food.png)
+}
+#clothes:hover{
+background-image:url(../img/clothes.png)
+}
 #content-template{
-min-height:966px;
+position:relative;
+
+width:100%;
+height:900px;
 background-image:url(../img/backgroundbottom.png);
-background-position: bottom;
+background-position: center bottom;
 background-repeat:no-repeat;
 }
 #content{
 width:972px;
 min-height:50px;
 margin:auto;
-
 }
 #footer{
 width:100%;
 height:350px;
-
-
+}
+#cont{
+width:100%;
+height:350px;
+background-color:white;
 }
 #social{
-width:100%;
+width: 100%;
 height:50px;
 background-color:#341806;
+text-align:center;
+}
+.social-item{
+width:34px;
+height:31px;
+display:inline-block;
+margin-top:5px;
+}
+#social-vk{
+background-image:url(../img/socialvk.png);
+}
+#social-fb{
+background-image:url(../img/socialfb.png);
+}
+#social-tw{
+background-image:url(../img/socialtw.png);
+}
+#social-in{
+background-image:url(../img/socialin.png);
 }
 #footer-main{
-width:100%;
+width: 100%;
 height:300px;
 background-image:url(../img/backgroundfooter.png);
+text-align:center;
+padding:0px;
+margin:0px;
+}
+#footer-main .menu{
+position:relative;
+margin-top:10px;
+margin-bottom:0px;
+}
+#footer-main .menu ul{
+color:#684c29;
+font-size:14px;
+}
+#footer-main .menu a{
+color:#684c29;
+}
+#footer-main .menu a:hover{
+color:#c69c6d;
+}
+#footer-main p{
+margin:40px 0 0 0 ;
+font-size:14px;
+color:#c69c6d;
+text-transform:uppercase;
+font-family: 'Cuprum', sans-serif;
+}
+#footer-main  #registration{
+color:#c69c6d;
+text-align:center;
+text-transform:uppercase;
+font-family: 'Cuprum', sans-serif;
+}
+#footer-main  #registration div{
+text-align:right;
+display:inline-block;
+height:10px;
+}
+#footer-main form{
+margin:0px;
+}
+#reg-label>p{
+position:relative;
+top:0px;
+}
+#reg-email{
+position:relative;
+top:-8px;
+width:366px;
+height:42px;
+background-color: transparent; 
+border-color:#c69c6d;
+margin-left:10px;
+margin-right:10px;
+
+}
+#reg-next{
+position:relative;
+top:-14px;
+border-radius: 3px;
+width:151px;
+height:36px;
+background-color:#006838;
+border:0;
+font-family: 'PT Sans', sans-serif;
+font-size:18px;
+}
+#reg-next:hover{
+background-color:#341806;
+}
+input::-webkit-input-placeholder { color: #684c29; }
+input::-moz-placeholder { color: #684c29; }
+input:-moz-placeholder  { color: #684c29; }
+input:-ms-input-placeholder  { color: #684c29; }
+#copywrite{
+position:relative;
+margin-top:20px;
+color:#684c29;	
+text-transform:uppercase;
+font-family: 'Cuprum', sans-serif;
 }
